@@ -1,0 +1,18 @@
+<<<<<<< HEAD
+fastmcp>=0.1.0
+qdrant-client>=1.13.0,<2.0.0
+pydantic>=2.0.0
+python-dotenv>=1.0.0
+requests>=2.31.0
+=======
+# Personal Knowledge-Base MCP server - standalone dependencies
+# (chunking.py, embeddings.py, qdrant_store.py, doc_registry.py,
+#  ingest.py, server.py, eval.py)
+
+fastmcp>=2.0.0
+google-genai>=1.0.0
+qdrant-client>=1.9.0
+pypdf>=4.0.0
+python-dotenv>=1.0.0
+tqdm>=4.66.0
+>>>>>>> origin/main

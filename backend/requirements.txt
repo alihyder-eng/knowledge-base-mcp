@@ -1,0 +1,17 @@
+# FastAPI backend dependencies.
+# Also needs everything in the root requirements.txt (ingest.py,
+# embeddings.py, qdrant_store.py, config.py, doc_registry.py are
+# imported directly from the project root - see backend/api/documents.py).
+-r ../requirements.txt
+
+fastapi>=0.110.0
+uvicorn[standard]>=0.29.0
+sqlalchemy>=2.0.0
+psycopg2-binary>=2.9.0
+python-jose[cryptography]>=3.3.0
+passlib[bcrypt]>=1.7.4
+# pinned <4.1 - passlib 1.7.4 breaks against newer bcrypt module layout
+bcrypt>=4.0.1,<4.1.0
+python-multipart>=0.0.9
+email-validator>=2.1.0
+python-dotenv>=1.0.0
